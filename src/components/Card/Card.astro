@@ -1,0 +1,163 @@
+---
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+---
+
+<aside>
+  <div class="card_container">
+    <div class="presentation-card">
+      <div class="presentation-card_header">
+        <h1>Fullstack web developer</h1>
+      </div>
+      <div class="presentation-card_image">
+        <div></div>
+      </div>
+      <div class="presentation-card_information">
+        <h1>Tomás Cárdenas</h1>
+        <h2>Benito Juarez, Argentina</h2>
+        <h3>tomicardenas96@gmail.com</h3>
+      </div>
+      <div class="presentation-card_social">
+        <div class="social-networks">
+          <div>
+            <FaXTwitter className="social-network_icon" />
+          </div>
+          <div>
+            <FaFacebook className="social-network_icon" />
+          </div>
+          <div>
+            <FaLinkedin className="social-network_icon" />
+          </div>
+          <div>
+            <RiInstagramFill className="social-network_icon" />
+          </div>
+        </div>
+      </div>
+      <div class="presentation-card_btn">
+        <button class="contact-me">CONTACT ME!</button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<style>
+  aside {
+    display: grid;
+    height: 100%;
+    width: 43rem;
+    position: fixed;
+    place-content: center;
+  }
+
+  .card_container {
+    width: 29rem;
+    height: 51rem;
+    background-color: white;
+    display: grid;
+    padding: 3rem;
+    border-radius: 0.2rem 4rem 0.2rem 4rem;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.257);
+  }
+
+  .card_container > .presentation-card {
+    display: grid;
+    grid-template-rows: 4rem 1fr 8rem 7rem 7rem;
+    gap: 0.3rem;
+  }
+
+  .presentation-card_header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    & h1 {
+      max-width: 10ch;
+      font-size: 1.2rem;
+      font-family: var(--presentation-card-font);
+      font-weight: lighter;
+    }
+  }
+
+  .presentation-card_image {
+    border-radius: 0.1rem 2rem 0.1rem 2rem;
+    padding: 0.2rem 0 1rem 0;
+
+    & div {
+      background-color: lightgray;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.1rem 2rem 0.1rem 2rem;
+    }
+  }
+
+  .presentation-card_information {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    & h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      place-content: center;
+      font-family: var(--presentation-card-font);
+      font-weight: lighter;
+      font-size: 1.5rem;
+    }
+
+    & h1 {
+      font-size: 1.7rem;
+      letter-spacing: 0.02rem;
+    }
+
+    & h2 {
+      color: rgba(0, 0, 0, 0.514);
+    }
+
+    & h3 {
+      color: rgba(0, 0, 0, 0.514);
+    }
+  }
+
+  .presentation-card > .presentation-card_social {
+    display: grid;
+    place-content: center;
+
+    & .social-networks {
+      width: 20rem;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      & div {
+        border: 2px solid black;
+        width: 4rem;
+        height: 4rem;
+        display: grid;
+        place-content: center;
+        border-radius: 50%;
+      }
+
+      & .social-network_icon {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .presentation-card_btn {
+    display: grid;
+    place-content: center;
+
+    & .contact-me {
+      border: none;
+      background-color: #cc3f0c;
+      width: 27rem;
+      height: 5rem;
+      border-radius: 3rem;
+      color: white;
+      font-family: var(--presentation-card-font);
+    }
+  }
+</style>
