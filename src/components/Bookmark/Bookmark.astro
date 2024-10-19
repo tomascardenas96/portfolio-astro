@@ -1,0 +1,46 @@
+---
+interface Props {
+  title: string;
+  icon: React.ElementType;
+}
+const { title, icon: IconComponent } = Astro.props;
+---
+
+<section class="bookmark_container">
+  <div class="bookmark">
+    <div class="bookmark-name">{title}</div>
+    <div class="bookmark-icon"><IconComponent /></div>
+  </div>
+</section>
+
+<style>
+  .bookmark_container {
+    width: 100%;
+    height: 4rem;
+  }
+
+  .bookmark {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 3rem;
+    border: 1px solid #01295f;
+  }
+
+  .bookmark-name {
+    padding: 0 1.7rem 0 2.8rem;
+    font-size: 1.2rem;
+    font-family: var(--header-font);
+  }
+
+  .bookmark-icon {
+    padding: 0 2.3rem 0 0;
+    font-size: 1.5rem;
+    color: #01295f;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+</style>

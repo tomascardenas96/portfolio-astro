@@ -1,0 +1,383 @@
+---
+import Bookmark from "../Bookmark/Bookmark.astro";
+import { FaHome } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaReact } from "react-icons/fa";
+import { FaNode } from "react-icons/fa6";
+import { SiNestjs } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandAstro } from "react-icons/tb";
+import { GrMysql } from "react-icons/gr";
+import { SiMongodb } from "react-icons/si";
+import { TbDiamondsFilled } from "react-icons/tb";
+---
+
+<section class="presentation_container">
+  <!-- Aqui va el marcador, que indica en que seccion se encuentra el usuario -->
+  <div>
+    <Bookmark title="PRESENTATION" icon={FaHome} />
+  </div>
+
+  <!-- Aqui va el contenido principal de la pagina de presentacion -->
+  <div class="presentation_information">
+    <!-- Informacion del lado izquierdo -->
+    <aside class="information-left">
+      <div class="information-left_top">
+        <h1 class="presentation_titles">Hello!</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          ratione ipsum omnis harum pariatur nesciunt fugit rem animi, alias
+          nam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+          voluptatibus ipsa mollitia rem fuga fugiat? Id temporibus pariatur
+          mollitia facilis. Minus inventore asperiores reprehenderit, quis et
+          incidunt dolorem. Voluptate voluptatibus nihil, pariatur fuga fugit
+          iste aperiam hic veritatis quo odit deserunt ullam.
+        </p>
+      </div>
+      <div class="information-left_bottom">
+        <h1 class="presentation_titles">Experience</h1>
+        <div class="experience-items_container">
+          <div class="experience-items_join">
+            <h2>CompileQ</h2>
+            <p>Visual Brand Identity Designer</p>
+          </div>
+          <p class="experience_dates">November 2023 - Present</p>
+        </div>
+        <div class="experience-items_container">
+          <div class="experience-items_join">
+            <h2>CompileQ</h2>
+            <p>Visual Brand Identity Designer</p>
+          </div>
+          <p class="experience_dates">November 2023 - Present</p>
+        </div>
+        <div class="experience-items_container">
+          <div class="experience-items_join">
+            <h2>CompileQ</h2>
+            <p>Visual Brand Identity Designer</p>
+          </div>
+          <p class="experience_dates">November 2023 - Present</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Informacion del lado derecho -->
+    <aside class="information-right">
+      <div class="information-right_education">
+        <h2 class="presentation_titles">Education</h2>
+        <div class="education-items_container">
+          <h2>Cluster Tecnologico Tandil</h2>
+          <p>Universidad Superior del Sudeste | Jul 2022 - Jul 2024</p>
+        </div>
+      </div>
+
+      <div class="information-right_technologies">
+        <h2 class="presentation_titles">Technologies</h2>
+        <div class="technologies-list">
+          <ul>
+            <li><FaHtml5 />HTML</li>
+            <li><FaCss3 />CSS</li>
+            <li><RiJavascriptFill />Javascript</li>
+            <li><BiLogoTypescript />Typescript</li>
+            <li><FaReact />React</li>
+            <li><TbBrandNextjs />Next</li>
+            <li><TbBrandAstro />Astro</li>
+          </ul>
+          <ul>
+            <li><FaNode />NodeJS</li>
+            <li><SiNestjs />NestJS</li>
+            <li><FaGitAlt />Git</li>
+            <li><FaGithub />Github</li>
+            <li><GrMysql />MySQL</li>
+            <li><SiMongodb />MongoDB</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="information-right_soft-skills">
+        <h2 class="presentation_titles">Soft-skills</h2>
+        <div class="soft-skills_container">
+          <p><TbDiamondsFilled /> Empathy</p>
+          <div class="soft-skills_progress-bar">
+            <div
+              class="progress-bar_percentage progress-bar_percentage-empathy"
+            >
+            </div>
+          </div>
+        </div>
+        <div class="soft-skills_container">
+          <p><TbDiamondsFilled /> Communication</p>
+          <div class="soft-skills_progress-bar">
+            <div
+              class="progress-bar_percentage progress-bar_percentage-communication"
+            >
+            </div>
+          </div>
+        </div>
+        <div class="soft-skills_container">
+          <p><TbDiamondsFilled /> Responsiblity</p>
+          <div class="soft-skills_progress-bar">
+            <div
+              class="progress-bar_percentage progress-bar_percentage-responsibility"
+            >
+            </div>
+          </div>
+        </div>
+        <div class="soft-skills_container">
+          <p><TbDiamondsFilled /> Teamwork</p>
+          <div class="soft-skills_progress-bar">
+            <div
+              class="progress-bar_percentage progress-bar_percentage-teamwork"
+            >
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Aqui van las referencias de las redes sociales / mail -->
+  <div class="presentation_social-network">
+    <div>
+      <FaWhatsapp />
+      <p>(+54) 2281-378525</p>
+    </div>
+    <div>
+      <FaLinkedin />
+      <p>www.linkedin.com/in/tomascardenas96/</p>
+    </div>
+    <div>
+      <FaGithub />
+      <p>www.github.com/tomascardenas96</p>
+    </div>
+    <div>
+      <BiLogoGmail />
+      <p>tomascardenas.dev@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+<!-- ESTILOS -->
+<style>
+  .presentation_container {
+    width: 100%;
+    height: calc(100svh - 6rem);
+    padding: 2.5rem 6rem 5rem 6rem;
+    display: grid;
+    grid-template-rows: max-content 1fr 3rem;
+    gap: 2rem;
+    box-sizing: border-box;
+  }
+
+  .presentation_information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9rem;
+  }
+
+  .presentation_titles {
+    color: white;
+    font-size: 3rem;
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+  }
+
+  aside.information-left {
+    display: grid;
+    grid-template-rows: 1fr 1.1fr;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.281));
+    padding-left: 1.5rem;
+
+    & .information-left_top {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      & p {
+        font-family: var(--presentation-card-font);
+        font-size: 1.4rem;
+        font-weight: lighter;
+        margin: 0;
+        padding: 0;
+        line-height: 2.4rem;
+      }
+    }
+
+    & .information-left_bottom {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      & .experience-items_container {
+        display: flex;
+        flex-direction: column;
+
+        & .experience-items_join {
+          display: flex;
+          flex-direction: column;
+          gap: 0.4rem;
+
+          & h2,
+          p {
+            margin: 0;
+            padding: 0;
+            font-family: var(--presentation-card-font);
+          }
+
+          & h2 {
+          }
+
+          & p {
+            font-size: 1.3rem;
+            font-weight: lighter;
+          }
+        }
+
+        & .experience_dates {
+          font-family: var(--presentation-card-font);
+          font-weight: 600;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  aside.information-right {
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    gap: 3rem;
+    padding-top: 2rem;
+
+    & .information-right_education {
+      display: grid;
+      grid-template-rows: max-content 1fr;
+      gap: 2.5rem;
+
+      & .education-items_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+
+        & h2,
+        p {
+          font-family: var(--presentation-card-font);
+          color: white;
+          margin: 0;
+          padding: 0;
+        }
+
+        & p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .information-right_technologies {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    & .technologies-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      & ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 0.8rem;
+
+        & li {
+          list-style: none;
+          font-size: 1.5rem;
+          font-family: var(--presentation-card-font);
+          color: white;
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.281));
+          display: flex;
+          gap: 0.8rem;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .information-right_soft-skills {
+    & .soft-skills_container {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 16rem 1fr;
+      height: 3.5rem;
+
+      & p {
+        font-family: var(--presentation-card-font);
+        color: white;
+        font-size: 1.4rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      & .soft-skills_progress-bar {
+        width: 10rem;
+        height: 0.5rem;
+        background-color: white;
+        border-radius: 0.3rem;
+
+        & .progress-bar_percentage {
+          background-color: #f74a06cc;
+          height: 100%;
+          border-radius: 0.3rem 0 0 0.3rem;
+        }
+
+        & .progress-bar_percentage-empathy {
+          width: 80%;
+        }
+
+        & .progress-bar_percentage-communication {
+          width: 85%;
+        }
+
+        & .progress-bar_percentage-responsibility {
+          width: 78%;
+        }
+
+        & .progress-bar_percentage-teamwork {
+          width: 87%;
+        }
+      }
+    }
+  }
+
+  .presentation_social-network {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-between;
+
+    & div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: white;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.281));
+
+      & p {
+        font-family: var(--presentation-card-font);
+        font-weight: 100;
+      }
+    }
+  }
+</style>

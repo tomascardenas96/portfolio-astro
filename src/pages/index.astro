@@ -3,6 +3,7 @@ import Layout from "../layout/Layout.astro";
 import Header from "../components/Header/Header.astro";
 import Card from "../components/Card/Card.astro";
 import SideBar from "../components/Side-bar/SideBar.astro";
+import Presentation from "../components/Sections/Presentation.astro";
 ---
 
 <Layout title="Tomas Cardenas - Portfolio">
@@ -13,7 +14,9 @@ import SideBar from "../components/Side-bar/SideBar.astro";
     <div class="presentation-card">
       <Card />
     </div>
-    <div class="body"></div>
+    <div class="body">
+      <Presentation />
+    </div>
     <div class="nav-bar">
       <SideBar />
     </div>
@@ -24,8 +27,28 @@ import SideBar from "../components/Side-bar/SideBar.astro";
       min-height: 100svh;
       display: grid;
       grid-template-rows: 6rem 1fr;
-      grid-template-columns: 43rem 1fr 15rem;
-      background-color: #34435ed2;
+      grid-template-columns: 40rem 1fr 15rem;
+      background: hsla(270, 94%, 25%, 1);
+
+      background: linear-gradient(
+        225deg,
+        hsla(270, 94%, 25%, 1) 0%,
+        hsla(158, 94%, 49%, 1) 100%
+      );
+
+      background: -moz-linear-gradient(
+        225deg,
+        hsla(270, 94%, 25%, 1) 0%,
+        hsla(158, 94%, 49%, 1) 100%
+      );
+
+      background: -webkit-linear-gradient(
+        225deg,
+        hsla(270, 94%, 25%, 1) 0%,
+        hsla(158, 94%, 49%, 1) 100%
+      );
+
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42047E", endColorstr="#07F49E", GradientType=1 );
 
       & .header {
         grid-column: 2 / 3;
